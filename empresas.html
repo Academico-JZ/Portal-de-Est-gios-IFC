@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Estágios IFC | Cadastro de Vagas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Institucional Compartilhado -->
+  <header>
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="marca">
+        <span class="marca-sigla">IFC</span>
+        <div class="marca-texto">
+          <h1>Portal de Estágios</h1>
+          <p>Campus Araquari</p>
+        </div>
+      </a>
+      <nav aria-label="Navegação Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="vagas.html">Vagas Abertas</a></li>
+          <li><a href="empresas.html" class="ativo">Cadastrar Vaga</a></li>
+          <li><a href="sobre.html">Orientações Legais</a></li>
+          <li><a href="contato.html">Dúvidas & Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h2>Cadastro de Vagas para Empresas Parceiras</h2>
+      <p>
+        Utilize o formulário abaixo para enviar os dados da oportunidade de estágio. As vagas serão analisadas pelo setor de extensão do IFC antes de serem divulgadas aos alunos.
+      </p>
+    </section>
+
+    <!-- Formulário Semântico com Validação Nativa HTML5 -->
+    <section class="formulario-box">
+      <h2 class="secao-titulo">Formulário de Abertura de Vaga</h2>
+
+      <form action="#" method="post">
+        <div class="form-linha">
+          <div class="form-grupo">
+            <label for="empresa-nome">Razão Social / Nome da Empresa:</label>
+            <input type="text" id="empresa-nome" name="empresa-nome" required minlength="3" placeholder="Ex: Informática Vale Ltda">
+          </div>
+          <div class="form-grupo">
+            <label for="empresa-cnpj">CNPJ:</label>
+            <input type="text" id="empresa-cnpj" name="empresa-cnpj" required placeholder="00.000.000/0001-00">
+          </div>
+        </div>
+
+        <div class="form-linha">
+          <div class="form-grupo">
+            <label for="contato-email">E-mail do Responsável (RH):</label>
+            <input type="email" id="contato-email" name="contato-email" required placeholder="rh@empresa.com.br">
+          </div>
+          <div class="form-grupo">
+            <label for="contato-telefone">Telefone / WhatsApp:</label>
+            <input type="tel" id="contato-telefone" name="contato-telefone" required placeholder="(47) 99999-9999">
+          </div>
+        </div>
+
+        <div class="form-linha">
+          <div class="form-grupo">
+            <label for="curso-alvo">Curso de Interesse:</label>
+            <select id="curso-alvo" name="curso-alvo" required>
+              <option value="">Selecione o curso...</option>
+              <option value="redes">Tecnologia em Redes de Computadores</option>
+              <option value="sistemas">Bacharelado em Sistemas de Informação</option>
+              <option value="veterinaria">Medicina Veterinária</option>
+              <option value="agropecuaria">Técnico em Agropecuária</option>
+              <option value="informatica">Técnico em Informática</option>
+            </select>
+          </div>
+          <div class="form-grupo">
+            <label for="modalidade">Tipo de Estágio:</label>
+            <select id="modalidade" name="modalidade" required>
+              <option value="nao-obrigatorio">Não-Obrigatório (Remunerado)</option>
+              <option value="obrigatorio">Obrigatório Curricular</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-linha">
+          <div class="form-grupo">
+            <label for="bolsa-valor">Valor da Bolsa Auxílio (R$):</label>
+            <input type="number" id="bolsa-valor" name="bolsa-valor" min="0" step="50" required placeholder="Ex: 1100">
+          </div>
+          <div class="form-grupo">
+            <label for="carga-horaria">Carga Horária Semanal:</label>
+            <select id="carga-horaria" name="carga-horaria" required>
+              <option value="20">20 horas semanais (4h/dia)</option>
+              <option value="30">30 horas semanais (6h/dia)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grupo">
+          <label for="descricao-vaga">Principais Atividades e Requisitos:</label>
+          <textarea id="descricao-vaga" name="descricao-vaga" rows="5" required placeholder="Descreva as tarefas diárias que o estagiário irá realizar sob supervisão profissional..."></textarea>
+        </div>
+
+        <div class="form-grupo">
+          <button type="submit" class="btn btn-primario">Enviar Vaga para Homologação</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Compartilhado -->
+  <footer>
+    <div class="container">
+      <div class="rodape-conteudo">
+        <div class="rodape-coluna">
+          <h4>Portal de Estágios IFC</h4>
+          <p>Trabalho prático da disciplina de Desenvolvimento Web I.</p>
+          <p>Instituto Federal Catarinense — Campus Araquari.</p>
+        </div>
+        <div class="rodape-coluna">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="vagas.html">Quadro de Vagas</a></li>
+            <li><a href="empresas.html">Cadastrar Vaga</a></li>
+            <li><a href="sobre.html">Legislação e Prazos</a></li>
+            <li><a href="contato.html">Setor de Estágios</a></li>
+          </ul>
+        </div>
+        <div class="rodape-coluna">
+          <h4>Contato Institucional</h4>
+          <p>Coordenação de Extensão e Estágios</p>
+          <p>E-mail: estagios.araquari@ifc.edu.br</p>
+        </div>
+      </div>
+      <p class="rodape-copy">© 2026 Instituto Federal Catarinense — Campus Araquari</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Estágios IFC | Atendimento e Dúvidas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Institucional Compartilhado -->
+  <header>
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="marca">
+        <span class="marca-sigla">IFC</span>
+        <div class="marca-texto">
+          <h1>Portal de Estágios</h1>
+          <p>Campus Araquari</p>
+        </div>
+      </a>
+      <nav aria-label="Navegação Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="vagas.html">Vagas Abertas</a></li>
+          <li><a href="empresas.html">Cadastrar Vaga</a></li>
+          <li><a href="sobre.html">Orientações Legais</a></li>
+          <li><a href="contato.html" class="ativo">Dúvidas & Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h2>Coordenação de Estágios e Relações Institucionais</h2>
+      <p>Envie sua dúvida sobre documentação, seguro, convênios de empresas ou validação de horas curriculares.</p>
+    </section>
+
+    <div class="grade-cards">
+      <!-- Formulário de Contato Direto -->
+      <section class="formulario-box" style="flex: 2; margin: 0;">
+        <h2 class="secao-titulo">Fale com o Setor de Estágios</h2>
+        <form action="#" method="post">
+          <div class="form-grupo">
+            <label for="nome-aluno">Nome Completo:</label>
+            <input type="text" id="nome-aluno" name="nome-aluno" required placeholder="Seu nome completo">
+          </div>
+
+          <div class="form-linha">
+            <div class="form-grupo">
+              <label for="matricula">Matrícula (se aluno):</label>
+              <input type="text" id="matricula" name="matricula" placeholder="Ex: 2023015830">
+            </div>
+            <div class="form-grupo">
+              <label for="email-contato">E-mail para Resposta:</label>
+              <input type="email" id="email-contato" name="email-contato" required placeholder="seuemail@exemplo.com">
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="tipo-assunto">Assunto Principal:</label>
+            <select id="tipo-assunto" name="tipo-assunto" required>
+              <option value="">Selecione o assunto...</option>
+              <option value="duvida-tce">Dúvida sobre Termo de Compromisso (TCE)</option>
+              <option value="seguro">Apólice de Seguro de Estágio</option>
+              <option value="relatorio">Entrega de Relatório Parcial / Final</option>
+              <option value="convenio">Convênio de Nova Empresa Concedente</option>
+              <option value="outro">Outros Assuntos</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem / Dúvida:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Explique brevemente sua dúvida com detalhes..."></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <button type="submit" class="btn btn-primario">Enviar Mensagem</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Cartão com Informações de Horário e Local -->
+      <aside class="card" style="flex: 1; align-self: flex-start;">
+        <div>
+          <span class="card-tag">Atendimento Presencial</span>
+          <h3>Setor de Estágios</h3>
+          <p>Localizado no Bloco Central do IFC Campus Araquari.</p>
+          <div class="card-detalhes">
+            <strong>Horário de Atendimento:</strong><br>
+            Segunda a Sexta: 08:00 às 12:00 e 13:30 às 17:30<br>
+            Quinta-feira (Noturno): 18:30 às 20:30<br><br>
+            <strong>E-mail Direto:</strong><br>
+            estagios.araquari@ifc.edu.br<br><br>
+            <strong>Telefone:</strong><br>
+            (47) 3803-7200
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- Rodapé Compartilhado -->
+  <footer>
+    <div class="container">
+      <div class="rodape-conteudo">
+        <div class="rodape-coluna">
+          <h4>Portal de Estágios IFC</h4>
+          <p>Trabalho prático da disciplina de Desenvolvimento Web I.</p>
+          <p>Instituto Federal Catarinense — Campus Araquari.</p>
+        </div>
+        <div class="rodape-coluna">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="vagas.html">Quadro de Vagas</a></li>
+            <li><a href="empresas.html">Cadastrar Vaga</a></li>
+            <li><a href="sobre.html">Legislação e Prazos</a></li>
+            <li><a href="contato.html">Setor de Estágios</a></li>
+          </ul>
+        </div>
+        <div class="rodape-coluna">
+          <h4>Contato Institucional</h4>
+          <p>Coordenação de Extensão e Estágios</p>
+          <p>E-mail: estagios.araquari@ifc.edu.br</p>
+        </div>
+      </div>
+      <p class="rodape-copy">© 2026 Instituto Federal Catarinense — Campus Araquari</p>
+    </div>
+  </footer>
+
+</body>
+</html>
